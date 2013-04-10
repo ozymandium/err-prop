@@ -71,6 +71,212 @@ ProcessConfig = r3
 
 
 
+ProcessConfig = pLogger {
+   File=LFvizData
+   GlobalLogPath=/home/rgcofield/devel/err_prop_ws/alogs
+
+   AppTick=1.0
+   CommsTick=20.0
+   AsyncLog=true
+   SyncLog=false
+   FileTimeStamp=true
+
+/*
+   Receiver 1
+ */
+   /* DRTK stuff*/
+   
+   Log = zpsrLat_r1
+   Log = zpsrLong_r1
+   Log = zpsrHeight_r1
+   Log = zpsrLatStdDev_r1
+   Log = zpsrLongStdDev_r1
+   Log = zpsrHgtStdDev_r1
+
+   Log = zCourse_r1
+
+   Log = zPsrL1_r1
+   Log = zPsrL2_r1
+   Log = zAdrL1_r1
+   Log = zAdrL2_r1
+   Log = zDopL1_r1
+   Log = zDopL2_r1
+   Log = zCnoL1_r1
+   Log = zCnoL2_r1
+
+   Log = zEphem1_r1
+   Log = zEphem2_r1
+   Log = zEphem3_r1
+   Log = zEphem4_r1
+   Log = zEphem5_r1
+   Log = zEphem6_r1
+   Log = zEphem7_r1
+   Log = zEphem8_r1
+   Log = zEphem9_r1
+   Log = zEphem10_r1
+   Log = zEphem11_r1
+   Log = zEphem12_r1
+   Log = zEphem13_r1
+   Log = zEphem14_r1
+   Log = zEphem15_r1
+   Log = zEphem16_r1
+   Log = zEphem17_r1
+   Log = zEphem18_r1
+   Log = zEphem19_r1
+   Log = zEphem20_r1
+   Log = zEphem21_r1
+   Log = zEphem22_r1
+   Log = zEphem23_r1
+   Log = zEphem24_r1
+   Log = zEphem25_r1
+   Log = zEphem26_r1
+   Log = zEphem27_r1
+   Log = zEphem28_r1
+   Log = zEphem29_r1
+   Log = zEphem30_r1
+   Log = zEphem31_r1
+   Log = zEphem32_r1
+
+   /* Truth */
+   zX_r1
+   zY_r1
+   zZ_r1
+   zXStdDev_r1
+   zYStdDev_r1
+   zZStdDev_r1
+
+/*
+   Receiver 2
+*/
+   /* DRTK stuff*/
+   Log = zpsrLat_r2
+   Log = zpsrLong_r2
+   Log = zpsrHeight_r2
+   Log = zpsrLatStdDev_r2
+   Log = zpsrLongStdDev_r2
+   Log = zpsrHgtStdDev_r2
+
+   Log = zCourse_r2
+
+   Log = zPsrL1_r2
+   Log = zPsrL2_r2
+   Log = zAdrL1_r2
+   Log = zAdrL2_r2
+   Log = zDopL1_r2
+   Log = zDopL2_r2
+   Log = zCnoL1_r2
+   Log = zCnoL2_r2
+    
+   Log = zEphem1_r2
+   Log = zEphem2_r2
+   Log = zEphem3_r2
+   Log = zEphem4_r2
+   Log = zEphem5_r2
+   Log = zEphem6_r2
+   Log = zEphem7_r2
+   Log = zEphem8_r2
+   Log = zEphem9_r2
+   Log = zEphem10_r2
+   Log = zEphem11_r2
+   Log = zEphem12_r2
+   Log = zEphem13_r2
+   Log = zEphem14_r2
+   Log = zEphem15_r2
+   Log = zEphem16_r2
+   Log = zEphem17_r2
+   Log = zEphem18_r2
+   Log = zEphem19_r2
+   Log = zEphem20_r2
+   Log = zEphem21_r2
+   Log = zEphem22_r2
+   Log = zEphem23_r2
+   Log = zEphem24_r2
+   Log = zEphem25_r2
+   Log = zEphem26_r2
+   Log = zEphem27_r2
+   Log = zEphem28_r2
+   Log = zEphem29_r2
+   Log = zEphem30_r2
+   Log = zEphem31_r2
+   Log = zEphem32_r2
+
+   /* Truth */
+   zX_r2
+   zY_r2
+   zZ_r2
+   zXStdDev_r2
+   zYStdDev_r2
+   zZStdDev_r2
+
+
+/*
+   Receiver 3
+*/
+   /* DRTK stuff*/
+   Log = zpsrLat_r3
+   Log = zpsrLong_r3
+   Log = zpsrHeight_r3
+   Log = zpsrLatStdDev_r3
+   Log = zpsrLongStdDev_r3
+   Log = zpsrHgtStdDev_r3
+
+   Log = zCourse_r3
+
+   Log = zPsrL1_r3
+   Log = zPsrL2_r3
+   Log = zAdrL1_r3
+   Log = zAdrL2_r3
+   Log = zDopL1_r3
+   Log = zDopL2_r3
+   Log = zCnoL1_r3
+   Log = zCnoL2_r3
+    
+   Log = zEphem1_r3
+   Log = zEphem2_r3
+   Log = zEphem3_r3
+   Log = zEphem4_r3
+   Log = zEphem5_r3
+   Log = zEphem6_r3
+   Log = zEphem7_r3
+   Log = zEphem8_r3
+   Log = zEphem9_r3
+   Log = zEphem10_r3
+   Log = zEphem11_r3
+   Log = zEphem12_r3
+   Log = zEphem13_r3
+   Log = zEphem14_r3
+   Log = zEphem15_r3
+   Log = zEphem16_r3
+   Log = zEphem17_r3
+   Log = zEphem18_r3
+   Log = zEphem19_r3
+   Log = zEphem20_r3
+   Log = zEphem21_r3
+   Log = zEphem22_r3
+   Log = zEphem23_r3
+   Log = zEphem24_r3
+   Log = zEphem25_r3
+   Log = zEphem26_r3
+   Log = zEphem27_r3
+   Log = zEphem28_r3
+   Log = zEphem29_r3
+   Log = zEphem30_r3
+   Log = zEphem31_r3
+   Log = zEphem32_r3
+
+   /* Truth */
+   zX_r3
+   zY_r3
+   zZ_r3
+   zXStdDev_r3
+   zYStdDev_r3
+   zZStdDev_r3
+
+}
+
+
+
+
 ProcessConfig = Antler
 {
    ExecutablePath=/usr/local/bin
@@ -81,4 +287,7 @@ ProcessConfig = Antler
    Run = gNovatel             @ NewConsole = true    ~r1
    Run = gNovatel             @ NewConsole = true    ~r2
    Run = gNovatel             @ NewConsole = true    ~r3
+
+   Run = pLogger               @ NewConsole = false
+
 }
