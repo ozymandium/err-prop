@@ -1,0 +1,81 @@
+ServerHost = localhost
+ServerPort = 9000
+Simulator = false
+
+
+ProcessConfig = r1
+{
+   AppTick=1.0
+   CommsTick=20.0
+   PUBLISHRAW=FALSE
+   POLLED_SENSOR=FALSE
+   APPEND_APP_NAME=TRUE
+   USB_PORT=TRUE
+   PORT_NUM=0
+   BAUD=115200
+   NUM_ATTEMPTS=10
+   
+   LOG = BESTPOSB    @ 1.0
+   LOG = BESTVELB    @ 1.0
+   LOG = PSRXYZB     @ 1.0
+   LOG = PSRPOSB     @ 1.0
+   LOG = RANGECMPB   @ 1.0
+   LOG = GPSEPHEMB
+}
+
+
+ProcessConfig = r2
+{
+   AppTick=1.0
+   CommsTick=20.0
+   PUBLISHRAW=FALSE
+   POLLED_SENSOR=FALSE
+   APPEND_APP_NAME=TRUE
+   USB_PORT=TRUE
+   PORT_NUM=1
+   BAUD=115200
+   NUM_ATTEMPTS=10
+
+   LOG = BESTPOSB    @ 1.0
+   LOG = BESTVELB    @ 1.0
+   LOG = PSRXYZB     @ 1.0
+   LOG = PSRPOSB     @ 1.0
+   LOG = RANGECMPB   @ 1.0
+   LOG = GPSEPHEMB
+}
+
+
+ProcessConfig = r3
+{
+   AppTick=1.0
+   CommsTick=20.0
+   PUBLISHRAW=FALSE
+   POLLED_SENSOR=FALSE
+   APPEND_APP_NAME=TRUE
+   USB_PORT=TRUE
+   PORT_NUM=1
+   BAUD=115200
+   NUM_ATTEMPTS=10
+
+   LOG = BESTPOSB    @ 1.0
+   LOG = BESTVELB    @ 1.0
+   LOG = PSRXYZB     @ 1.0
+   LOG = PSRPOSB     @ 1.0
+   LOG = RANGECMPB   @ 1.0
+   LOG = GPSEPHEMB
+}
+
+
+
+
+ProcessConfig = Antler
+{
+   ExecutablePath=/usr/local/bin
+
+   Run = MOOSDB               @ NewConsole = false
+   Run = uMS                  @ NewConsole = false
+
+   Run = gNovatel             @ NewConsole = true    ~r1
+   Run = gNovatel             @ NewConsole = true    ~r2
+   Run = gNovatel             @ NewConsole = true    ~r3
+}
