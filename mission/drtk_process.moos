@@ -1,0 +1,38 @@
+ServerHost = localhost
+ServerPort = 9000
+Simulator = false
+
+
+ProcessConfig = gDRTK {
+   AppTick=5.0
+   CommsTick=20.0
+}
+
+
+ProcessConfig = pLogger {
+   // File=r1r2_drtk
+   // File=r2r3_drtk
+   File=r1r3_drtk
+   GlobalLogPath=/media/rgcofield/StorageDrive/alog_Files/err_prop/testing/consolidate_log/output/
+
+   AppTick=1.0
+   CommsTick=20.0
+   AsyncLog=true
+   SyncLog=false
+   FileTimeStamp=false
+
+   Log = zRpv
+}
+
+
+
+ProcessConfig = Antler
+{
+   ExecutablePath=/usr/local/bin
+
+   Run = MOOSDB               @ NewConsole = true
+   Run = uMS                  @ NewConsole = false
+   Run = uPlayBack            @ NewConsole = false
+   Run = gDRTK                @ NewConsole = false
+   Run = pLogger              @ NewConsole = false
+}
